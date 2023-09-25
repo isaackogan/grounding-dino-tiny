@@ -1,0 +1,92 @@
+{
+  "activation_dropout": 0.0,
+  "activation_function": "relu",
+  "architectures": [
+    "GroundingDINOForObjectDetection"
+  ],
+  "attention_dropout": 0.0,
+  "auxiliary_loss": false,
+  "backbone": "swin",
+  "backbone_config": {
+    "depths": [
+      2,
+      2,
+      6,
+      2
+    ],
+    "model_type": "swin",
+    "num_heads": [
+      3,
+      6,
+      12,
+      24
+    ],
+    "out_features": [
+      "stage2",
+      "stage3",
+      "stage4"
+    ],
+    "out_indices": [
+      2,
+      3,
+      4
+    ]
+  },
+  "bbox_cost": 5,
+  "bbox_loss_coefficient": 5,
+  "class_cost": 1,
+  "d_model": 256,
+  "decoder_attention_heads": 8,
+  "decoder_bbox_embed_share": true,
+  "decoder_ffn_dim": 2048,
+  "decoder_layers": 6,
+  "decoder_n_points": 4,
+  "dice_loss_coefficient": 1,
+  "dilation": false,
+  "disable_custom_kernels": false,
+  "dropout": 0.1,
+  "embedding_init_target": true,
+  "encoder_attention_heads": 8,
+  "encoder_ffn_dim": 2048,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "encoder_n_points": 4,
+  "eos_coefficient": 0.1,
+  "focal_alpha": 0.25,
+  "fusion_dropout": 0.0,
+  "fusion_droppath": 0.1,
+  "giou_cost": 2,
+  "giou_loss_coefficient": 2,
+  "init_std": 0.02,
+  "init_xavier_std": 1.0,
+  "is_encoder_decoder": true,
+  "mask_loss_coefficient": 1,
+  "max_position_embeddings": 1024,
+  "max_text_len": 256,
+  "model_type": "grounding-dino",
+  "num_channels": 3,
+  "num_feature_levels": 4,
+  "num_queries": 900,
+  "position_embedding_type": "sine",
+  "positional_embedding_temperature": 20,
+  "query_dim": 4,
+  "sub_sentence_present": true,
+  "text_backbone_config": {
+    "_name_or_path": "bert-base-uncased",
+    "architectures": [
+      "BertForMaskedLM"
+    ],
+    "gradient_checkpointing": false,
+    "model_type": "bert"
+  },
+  "text_enhancer_dropout": 0.0,
+  "torch_dtype": "float32",
+  "transformers_version": "4.33.0.dev0",
+  "two_stage": true,
+  "two_stage_bbox_embed_share": false,
+  "two_stage_class_embed_share": false,
+  "two_stage_num_proposals": 900,
+  "use_pretrained_backbone": true,
+  "use_timm_backbone": false,
+  "with_box_refine": true
+}
