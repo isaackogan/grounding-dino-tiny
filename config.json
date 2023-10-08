@@ -48,7 +48,6 @@
   "embedding_init_target": true,
   "encoder_attention_heads": 8,
   "encoder_ffn_dim": 2048,
-  "encoder_layerdrop": 0.0,
   "encoder_layers": 6,
   "encoder_n_points": 4,
   "eos_coefficient": 0.1,
@@ -57,8 +56,6 @@
   "fusion_droppath": 0.1,
   "giou_cost": 2,
   "giou_loss_coefficient": 2,
-  "init_std": 0.02,
-  "init_xavier_std": 1.0,
   "is_encoder_decoder": true,
   "mask_loss_coefficient": 1,
   "max_position_embeddings": 1024,
@@ -70,14 +67,8 @@
   "position_embedding_type": "sine",
   "positional_embedding_temperature": 20,
   "query_dim": 4,
-  "sub_sentence_present": true,
   "text_backbone_config": {
-    "_name_or_path": "bert-base-uncased",
-    "architectures": [
-      "BertForMaskedLM"
-    ],
-    "gradient_checkpointing": false,
-    "model_type": "bert"
+    "model_type": "grounding-dino-text-prenet"
   },
   "text_enhancer_dropout": 0.0,
   "torch_dtype": "float32",
