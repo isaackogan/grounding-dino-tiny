@@ -58,7 +58,6 @@
   "giou_loss_coefficient": 2,
   "is_encoder_decoder": true,
   "mask_loss_coefficient": 1,
-  "max_position_embeddings": 1024,
   "max_text_len": 256,
   "model_type": "grounding-dino",
   "num_channels": 3,
