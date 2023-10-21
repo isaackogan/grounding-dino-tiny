@@ -71,8 +71,6 @@
   "transformers_version": "4.35.0.dev0",
   "two_stage": true,
   "two_stage_bbox_embed_share": false,
-  "two_stage_class_embed_share": false,
-  "two_stage_num_proposals": 900,
   "use_pretrained_backbone": true,
   "use_timm_backbone": false,
   "with_box_refine": true
