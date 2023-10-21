@@ -9,7 +9,7 @@
     0.456,
     0.406
   ],
-  "image_processor_type": "DeformableDetrImageProcessor",
+  "image_processor_type": "GroundingDINOImageProcessor",
   "image_std": [
     0.229,
     0.224,
