@@ -41,14 +41,13 @@
       "special": true
     }
   },
-  "additional_special_tokens": [],
   "clean_up_tokenization_spaces": true,
   "cls_token": "[CLS]",
   "do_lower_case": true,
   "mask_token": "[MASK]",
   "model_max_length": 512,
   "pad_token": "[PAD]",
-  "processor_class": "GroundingDINOProcessor",
+  "processor_class": "GroundingDinoProcessor",
   "sep_token": "[SEP]",
   "strip_accents": null,
   "tokenize_chinese_chars": true,
