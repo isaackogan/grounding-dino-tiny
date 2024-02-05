@@ -70,6 +70,7 @@
   "giou_loss_coefficient": 2.0,
   "init_std": 0.02,
   "is_encoder_decoder": true,
+  "layer_norm_eps": 1e-05,
   "max_text_len": 256,
   "model_type": "grounding-dino",
   "num_feature_levels": 4,
@@ -82,7 +83,7 @@
   },
   "text_enhancer_dropout": 0.0,
   "torch_dtype": "float32",
-  "transformers_version": "4.36.0.dev0",
+  "transformers_version": "4.38.0.dev0",
   "two_stage": true,
   "two_stage_bbox_embed_share": false
 }
