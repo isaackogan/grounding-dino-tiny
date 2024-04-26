@@ -28,9 +28,10 @@ import requests
 
 import torch
 from PIL import Image
-from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection, 
+from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection 
 
 model_id = "IDEA-Research/grounding-dino-tiny"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 processor = AutoProcessor.from_pretrained(model_id)
 model = AutoModelForZeroShotObjectDetection.from_pretrained(model_id).to(device)
