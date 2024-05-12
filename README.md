@@ -39,6 +39,7 @@ model = AutoModelForZeroShotObjectDetection.from_pretrained(model_id).to(device)
 image_url = "http://images.cocodataset.org/val2017/000000039769.jpg"
 image = Image.open(requests.get(image_url, stream=True).raw)
 # Check for cats and remote controls
+# VERY important: text queries need to be lowercased + end with a dot
 text = "a cat. a remote control."
 
 inputs = processor(images=image, text=text, return_tensors="pt").to(device)
