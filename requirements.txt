@@ -1,0 +1,7 @@
+runpod
+torch
+transformers
+Pillow
+accelerate
+numpy
+huggingface-hub
