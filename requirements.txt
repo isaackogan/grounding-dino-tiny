@@ -5,3 +5,4 @@ Pillow
 accelerate
 numpy
 huggingface-hub
+safetensors
